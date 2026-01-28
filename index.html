@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <script type="text/javascript">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="ja">
+<HEAD>
+  <script type="text/javascript">
     (function() {
       var didInit = false;
       function initMunchkin() {
@@ -23,287 +23,112 @@
       document.getElementsByTagName('head')[0].appendChild(s);
     })();
     </script>
-    <!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MCMW688T');</script>
 <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ウィジェットテスト</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-      .visual-fullscreen {
-        position: fixed;
-        inset: 0;
-        /* 下層: グラデーション, 上層: グリッド */
-        background: linear-gradient(135deg, #0ea5e9, #8b5cf6),
-          linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.12) 1px,
-            transparent 1px
-          ),
-          linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0.12) 1px,
-            transparent 1px
-          );
-        background-size: auto, 24px 24px, 24px 24px;
-        background-attachment: fixed;
-        z-index: -1;
-      }
-      .viewport-debug {
-        position: fixed;
-        top: 8px;
-        left: 8px;
-        z-index: 9999;
-        pointer-events: none;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", monospace;
-        color: #fff;
-      }
-      .viewport-debug .panel {
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(6px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        padding: 10px 12px;
-        line-height: 1.4;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-      }
-      .viewport-debug .label {
-        opacity: 0.8;
-      }
-      .viewport-debug .value {
-        font-weight: 700;
-      }
-      .demo-wrap {
-        max-width: 1200px;
-        margin: 24px auto 8px;
-        padding: 0 16px;
-        color: #fff;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-      }
-      .demo-wrap h2 {
-        margin: 0 0 12px;
-        font-size: 20px;
-      }
-      .demo-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 12px;
-      }
-      .demo-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        padding: 12px;
-        aspect-ratio: 4 / 3;
-        color: #fff;
-        font-weight: 700;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-      }
-      .demo-item:nth-child(6n + 1) {
-        background: linear-gradient(135deg, #06b6d4, #3b82f6);
-      }
-      .demo-item:nth-child(6n + 2) {
-        background: linear-gradient(135deg, #22c55e, #84cc16);
-      }
-      .demo-item:nth-child(6n + 3) {
-        background: linear-gradient(135deg, #f97316, #f59e0b);
-      }
-      .demo-item:nth-child(6n + 4) {
-        background: linear-gradient(135deg, #ec4899, #a855f7);
-      }
-      .demo-item:nth-child(6n + 5) {
-        background: linear-gradient(135deg, #06b6d4, #10b981);
-      }
-      .demo-item:nth-child(6n + 6) {
-        background: linear-gradient(135deg, #3b82f6, #a855f7);
-      }
-      .demo-item .js-box-size {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", monospace;
-        letter-spacing: 0.2px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
+<META http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<META name="author" content="自分の名前">
+<META name="description" content="このページの説明">
+<META name="keywords" content="キーワード１,キーワード２,キーワード３">
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="stylesheet" href="style.css" type="text/css">
+<TITLE>このページのタイトル</TITLE>
+<LINK rev="made" href="mailto:自分のメールアドレス">
+<LINK rel="next" href="./next.html">
+</HEAD>
+<BODY>
+	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCMW688T"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div class="visual-fullscreen"></div>
-    <section class="demo-wrap">
-      <h2>レスポンシブボックス</h2>
-      <div class="demo-grid">
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-        <div class="demo-item"><span class="js-box-size">-</span></div>
-      </div>
-    </section>
-    <div class="viewport-debug">
-      <div class="panel">
-        <div>
-          <span class="label">inner</span>:
-          <span id="vv-inner" class="value">-</span>
-        </div>
-        <div>
-          <span class="label">visualViewport</span>:
-          <span id="vv-visual" class="value">-</span>
-        </div>
-        <div>
-          <span class="label">DPR</span>:
-          <span id="vv-dpr" class="value">-</span> /
-          <span class="label">orientation</span>:
-          <span id="vv-orientation" class="value">-</span>
-        </div>
-      </div>
-    </div>
-    <h1>AIチャットウィジェットテスト</h1>
-    <p>このページにはAIチャットウィジェットが埋め込まれています。</p>
+<H1>一番大きい見出し</H1>
 
-    <h2>テスト項目</h2>
-    <ul>
-      <li>✅ ウィジェットが正常に表示される</li>
-      <li>✅ PC版でウィジェットの高さが calc(100dvh - 90px) になっている</li>
-      <li>✅ チャットウィンドウのタイトル部に閉じるボタン（×）が表示される</li>
-      <li>✅ 閉じるボタンをクリックするとチャットウィンドウが閉じる</li>
-      <li>✅ フローティングボタンをクリックするとチャットウィンドウが開く</li>
-    </ul>
+<H2>二番目に大きい見出し</H2>
+<H3>三番目に大きい見出し</H3>
 
-    <h2>デバッグ機能</h2>
-    <button onclick="window.MastraAiChatWidget?.showProfileForm()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; background: #6366F1; color: white; border: none; border-radius: 8px;">
-      プロフィールフォームを表示
-    </button>
-    <p style="color: #666; font-size: 14px; margin-top: 8px;">
-      ※ Marketo Forms 2.0 API連携をテストするには、このボタンでフォームを表示し、メールアドレスを入力して送信してください。
-    </p>
-    <!-- Marketo Munchkin トラッキングコード（Forms 2.0 APIとの連携に必要） -->
-    <script type="text/javascript">
-    (function() {
-      var didInit = false;
-      function initMunchkin() {
-        if(didInit === false) {
-          didInit = true;
-          Munchkin.init('406-PFO-715');
-        }
-      }
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://munchkin.marketo.net/munchkin.js';
-      s.onreadystatechange = function() {
-        if (this.readyState == 'complete' || this.readyState == 'loaded') {
-          initMunchkin();
-        }
-      };
-      s.onload = initMunchkin;
-      document.getElementsByTagName('head')[0].appendChild(s);
-    })();
-    </script>
+<P>この要素は、<EM>その範囲が１つの段落であることを示します</EM>。一般的なブラウザでは、P要素の前で改行されて、さらに１行分のスペースがとられます。この範囲には内容として<STRONG>ブロックレベル要素を含むことはできません</STRONG>。単に、改行を目的とした内容が空のP要素は無視されます。</P>
 
-    <!-- Marketo Forms 2.0 スクリプト（ベースURL自動検出用） -->
-    <script src="https://lp.mazrica.com/js/forms2/js/forms2.min.js"></script>
+<PRE>
+この要素は、その範囲の文章が整形済みであることを示します。
+つまり、一般的なブラウザでは、要素の内容に含まれる空白文字
+や改行は入力した通りに等幅のフォントで表示され、ワードラッ
+プ（文字の折り返し）も行われません。但し、開始タグ直後と終
+了タグ直前の改行は無視されます。この要素内でタブは使用しな
+いようにして下さい。
+</PRE>
 
-    <!-- seed.tsのANYWHERE_WIDGET_*と一致させている -->
-    <script
-      async
-      src="http://localhost:3001/widget/fae185be-a612-4458-89b8-47352afe57c6/b72f5266-6c90-47ad-83a3-0736baaddb85/script.js"
-    ></script>
-    <script>
-      (function () {
-        const round = (n) => Math.round(n);
+<UL>
+<LI>項目１</LI>
+<LI>項目２</LI>
+<LI>項目３</LI>
+</UL>
 
-        const getOrientation = () => {
-          if (screen.orientation && screen.orientation.type) {
-            return screen.orientation.type;
-          }
-          const iw = window.innerWidth;
-          const ih = window.innerHeight;
-          return iw > ih ? 'landscape' : 'portrait';
-        };
+<OL>
+<LI>項目１</LI>
+<LI>項目２</LI>
+<LI>項目３</LI>
+</OL>
 
-        const updateViewportPanel = () => {
-          const innerText = `${round(window.innerWidth)} x ${round(window.innerHeight)} px`;
-          const visual = window.visualViewport;
-          const visualText = visual
-            ? `${round(visual.width)} x ${round(visual.height)} px`
-            : '未対応';
-          const dprText = (window.devicePixelRatio || 1).toFixed(2);
-          const orientText = getOrientation();
+<OL>
+<LI>項目１</LI>
+<LI>項目２
+	<UL>
+	<LI>項目２の項目ア
+		<UL>
+		<LI>項目２の項目アの項目I</LI>
+		<LI>項目２の項目アの項目II</LI>
+		<LI>項目２の項目アの項目III</LI>
+		</UL>
+	</LI>
+	<LI>項目２の項目イ</LI>
+	<LI>項目２の項目ウ</LI>
+	</UL>
+</LI>
+<LI>項目３</LI>
+</OL>
 
-          const elInner = document.getElementById('vv-inner');
-          const elVisual = document.getElementById('vv-visual');
-          const elDpr = document.getElementById('vv-dpr');
-          const elOri = document.getElementById('vv-orientation');
-          if (elInner) elInner.textContent = innerText;
-          if (elVisual) elVisual.textContent = visualText;
-          if (elDpr) elDpr.textContent = dprText;
-          if (elOri) elOri.textContent = orientText;
-        };
+<DL>
+<DT>用語１</DT>
+<DD>用語１の説明</DD>
+<DT>用語２</DT>
+<DD>用語２の説明</DD>
+<DT>用語３</DT>
+<DD>用語３の説明</DD>
+</DL>
 
-        const updateBox = (el) => {
-          const w = el.clientWidth;
-          const h = el.clientHeight;
-          const text = `${round(w)} x ${round(h)} px`;
-          const span = el.querySelector('.js-box-size');
-          if (span) span.textContent = text;
-        };
+<P><IMG SRC="http://www.google.co.jp/intl/ja_jp/images/logo.gif" height="110" width="276" alt="Googleトップのロゴ"></P>
 
-        const initBoxes = () => {
-          const boxes = Array.from(document.querySelectorAll('.demo-item'));
-          boxes.forEach(updateBox);
+<TABLE border="1" summary="表の要約（説明）">
+<CAPTION>表の題名</CAPTION>
+<TR>
+<TH ABBR="項目１">項目名１</TH>
+<TH ABBR="項目２">項目名２</TH>
+<TH ABBR="項目３">項目名３</TH>
+</TR>
+<TR>
+<TD>データ１</TD>
+<TD>データ２</TD>
+<TD>データ３</TD>
+</TR>
+<TR>
+<TD>データ４</TD>
+<TD>データ５</TD>
+<TD>データ６</TD>
+</TR>
+</TABLE>
 
-          if ('ResizeObserver' in window) {
-            const ro = new ResizeObserver((entries) => {
-              entries.forEach((entry) => {
-                updateBox(entry.target);
-              });
-            });
-            boxes.forEach((el) => ro.observe(el));
-          } else {
-            window.addEventListener('resize', () => {
-              boxes.forEach(updateBox);
-            });
-          }
-        };
+<P><A href="next.html">次のページへ</A></P>
 
-        window.addEventListener('resize', updateViewportPanel);
-        if (window.visualViewport) {
-          window.visualViewport.addEventListener('resize', updateViewportPanel);
-        }
+<HR>
 
-        document.addEventListener('DOMContentLoaded', () => {
-          updateViewportPanel();
-          initBoxes();
-        });
-      })();
-    </script>
-  </body>
-</html>
-折りた
+<ADDRESS>
+自分の名前<BR>
+自分のメールアドレス
+</ADDRESS>
 
-
-
-
-
-
-
+</BODY>
+</HTML>
